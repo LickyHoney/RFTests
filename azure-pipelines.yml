@@ -76,7 +76,7 @@ steps:
   
   - powershell: |
      Write-Host "Robot Framework tests"
-     robot -x 'outputxunit.xml' '$(Build.SourcesDirectory)\.'
+     robot -x 'outputxunit.xml' 'C:\Users\ett21011\Desktop\RFTests\TestCases.robot'
     failOnStderr: true
     displayName: 'Run Robot Framework Tests'
     continueOnError: true
