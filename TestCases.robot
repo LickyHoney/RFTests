@@ -2,7 +2,7 @@
 Documentation   Auto1/QA Task
 Library         SeleniumLibrary
 Library         String
-Library         helpers.py
+# Library         helpers.py
 Library         Collections    
 Suite Setup     Open URL Locally
 Suite Teardown  Close Browser
