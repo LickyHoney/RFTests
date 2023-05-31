@@ -2,7 +2,7 @@
 Documentation   Auto1/QA Task
 Library         SeleniumLibrary
 Library         String
-# Library         helpers.py
+Library         helpers.HelpLib
 Library         Collections    
 Suite Setup     Open URL Locally
 Suite Teardown  Close Browser
@@ -43,7 +43,7 @@ Open URL AutoHero
 
 User is on Advanced Search Page
     Sleep   5s
-    # Click Element                       //*[contains(text(),'Erweiterte Suche')]
+    Click Element                       //button[contains(text(),'Erweiterte Suche')]
     Wait Until Element Is Visible       //span[contains(text(),'Erstzulassung ab')]
 
 User Select Filter for First registration
