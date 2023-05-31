@@ -76,10 +76,14 @@ steps:
   
   - powershell: |
      Write-Host "Robot Framework tests"
-     robot --pythonpath . -x 'outputxunit.xml' -t 'tests'
+     robot --pythonpath . -x outputxunit.xml tests
     failOnStderr: true
     displayName: 'Run Robot Framework Tests'
     continueOnError: true
+
+  # - powershell: 
+  #     robot --pythonpath . -x outputxunit.xml ex3/search_flights
+  #   displayName: 'Run robot tests'
   
   # - task: PublishTestResults@2
   #   displayName: 'Publish Test Results'
